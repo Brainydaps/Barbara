@@ -7,6 +7,8 @@
 
 ## 🚀 Overview
 
+We live in times where most people are disconnected from their physical world and people around them, often focusing on a virtual world (instagram, twitter, facebook, tiktok etc) where reality is grossly wapped, creating an illusion in people's mind that every other person is doing better than them. These social media platforms are powered by algorithms whose main purpose is to keep you on them for as long as possible, neglecting your physical and mental health. Now is the time to turn algorithms against algorithms to begin to heal the world. Your mental health is important, you are more than a data point to be analysed , you are important.
+
 Imagine a well-read psychologist who is also a data analyst—with months of your health metrics and a full year of your journal entries at their fingertips. What if that “person” could support you through the ups and downs of life? **Barbara** brings that vision to your devices.
 
 Barbara is a multi-agent, single-turn conversation app built in **.NET MAUI** (Shell + TabBar) with a clean **MVVM** architecture. Under the hood, it leverages **Azure AI Agent Services** (hosted on AI Foundry) via an API-key in the project connection string.
@@ -65,18 +67,25 @@ She embodies a healer radiating positive energy—exactly what this app aims to 
   - Movement & standing time  
   - Temperature, AQI  
   - Journal “positive/negative events” count  
-  - Mood score (–1 to +1)  
+  - Mood score (–1 to +1)
+  - This dataset was gotten from Xiaomi smart band 8 and iPhone Journal app.
 - **Output**: Data-driven insights, RFE feature-importance, time-series forecasts based on user query
 
+  ![IMG_3283 PNG](https://github.com/user-attachments/assets/914e2873-43cb-4100-8da4-2f4de21b9ca8)
+
+
 ### 2. JournalHistorianAgent  
-- **Data**: Vectorized journal entries (1 year) of user, hybrid keyword + semantic search  
+- **Data**: Vectorized journal entries (1 year) of user, hybrid keyword + semantic search. The journal.pdf was exported from iPhone Journal app.
 - **Output**:  
   - Summaries by date/time-range/theme based on user specifications
   - Emerging patterns & temporal trends  
   - Reflective journal insights
+ 
+    ![IMG_3284 PNG](https://github.com/user-attachments/assets/5ec1880a-d02c-4170-a40f-2244edbfa50e)
+
 
 ### 3. PsychologistAgent  
-- **Data**: Vectorized corpus of psychological texts on mood, emotion, depression  
+- **Data**: Vectorized corpus of psychological texts on mood, emotion, depression. Well referenced psychological books on human emotions/mood; royalty free books only. 
 - **Output**:  
   - Empathetic validation  
   - Evidence-based coping strategies  
