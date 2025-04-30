@@ -7,7 +7,7 @@
 
 ## 🚀 Overview
 
-Imagine a well-read psychologist who is also a data analyst—with months of your health metrics and a full year of your journal entries at their fingertips. What if that “person” could support you through the ups and downs of life? **Barbara** brings that vision to your phone.
+Imagine a well-read psychologist who is also a data analyst—with months of your health metrics and a full year of your journal entries at their fingertips. What if that “person” could support you through the ups and downs of life? **Barbara** brings that vision to your devices.
 
 Barbara is a multi-agent, single-turn conversation app built in **.NET MAUI** (Shell + TabBar) with a clean **MVVM** architecture. Under the hood, it leverages **Azure AI Agent Services** (hosted on AI Foundry) via an API-key in the project connection string.
 
