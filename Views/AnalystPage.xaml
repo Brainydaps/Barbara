@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="Barbara.Views.AnalystPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:controls="clr-namespace:Barbara.Controls"
+    Title="Analyst"
+    BackgroundColor="#FFF3E0">
+
+    <Grid RowDefinitions="*,Auto" Padding="10">
+        <CollectionView
+            ItemsSource="{Binding Messages}"
+            Grid.Row="0">
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+                    <controls:MessageView />
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+
+        <Grid Grid.Row="1" ColumnDefinitions="*,Auto" Margin="0,10,0,0">
+            <Entry
+                Grid.Column="0"
+                Text="{Binding InputText, Mode=TwoWay}"
+                Placeholder="Ask Barbara..." />
+            <Button
+                Grid.Column="1"
+                Text="Send"
+                Command="{Binding SendCommand}" />
+        </Grid>
+    </Grid>
+</ContentPage>
