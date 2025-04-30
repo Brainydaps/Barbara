@@ -93,7 +93,9 @@ She embodies a healer radiating positive energy—exactly what this app aims to 
 
 ---
 
-## 📁 Project Structure
+## 📁 Project Structure and Class communication
+
+![diagram](https://github.com/user-attachments/assets/4e42490f-5776-469d-b29e-99bd528c2ce0)
 
 ```text
 Barbara/
